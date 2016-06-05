@@ -7,7 +7,7 @@ package cryptography;
 
 public class CharacterHelper{
    public static int ALPAHBET_SIZE = 26;
-   static int getIndexForChar(char ch){
+   public static int getIndexForChar(char ch){
         if(!Character.isAlphabetic(ch)){
             throw new RuntimeException("Character shoudl be alpahbedic");
         }//end of method
@@ -15,7 +15,7 @@ public class CharacterHelper{
         return ch - 'A';
     }//end of method
    
-   static char getCharacterWithIndex(int index){
+   public static char getCharacterWithIndex(int index){
        if(index < 0 || index >= ALPAHBET_SIZE){
            throw new RuntimeException("Index of character out of bound");
        }//end if
